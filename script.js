@@ -188,3 +188,29 @@ prevBtn.addEventListener("click", ()=>{
   currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
   updateCarousel();
 });
+
+// Reusable for BOTH Carousels- Biotic factors )
+document.querySelectorAll(".tundra-carousel").forEach(carousel => {
+
+  const track = carousel.querySelector(".carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-slide");
+  const nextBtn = carousel.querySelector(".next");
+  const prevBtn = carousel.querySelector(".prev");
+
+  let index = 0;
+
+  function update(){
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  nextBtn.addEventListener("click",()=>{
+    index = (index + 1) % slides.length;
+    update();
+  });
+
+  prevBtn.addEventListener("click",()=>{
+    index = (index - 1 + slides.length) % slides.length;
+    update();
+  });
+
+});

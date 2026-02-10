@@ -515,3 +515,75 @@ footer{
 .abiotic-next:hover{
   background:#1B4332;
 }
+
+
+/* ========================== */
+/* TUNDRA IMAGE CAROUSEL */
+/* ========================== */
+
+.tundra-carousel{
+  position:relative;
+  overflow:hidden;
+  border-radius:14px;
+  margin:40px auto;   /* centers carousel */
+  width:70%;          /* controls size */
+  max-width:700px;    /* prevents over stretching */
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+
+.carousel-track{
+  display:flex;
+  transition:transform 0.5s ease;
+}
+
+.carousel-slide{
+  min-width:100%;
+  position:relative;
+}
+
+.carousel-slide img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:14px;
+}
+
+.carousel-slide span{
+  position:absolute;
+  bottom:12px;
+  left:15px;
+  background:rgba(0,0,0,0.6);
+  color:white;
+  padding:6px 12px;
+  border-radius:6px;
+  font-size:14px;
+}
+
+/* Buttons */
+
+.carousel-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.6);
+  color:white;
+  border:none;
+  padding:10px 14px;
+  cursor:pointer;
+  border-radius:8px;
+  z-index:10;
+}
+
+.carousel-btn.prev{ left:10px; }
+.carousel-btn.next{ right:10px; }
+
+.carousel-btn:hover{
+  background:#1B4332;
+}
+
+/* Split layout fix */
+
+.animals-carousel{
+  width:40%;
+}
