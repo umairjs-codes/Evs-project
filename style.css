@@ -1,0 +1,456 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  line-height:1.6;
+  background:#f8f9fa;
+}
+
+/* NAVBAR */
+
+.navbar{
+  position:sticky;
+  top:0;
+  background:#1B4332;
+  color:white;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+
+.navbar nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+/* HERO */
+
+.hero{
+  height:70vh;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(80, 79, 79, 0.5)),
+  url("images/hero.jpg") center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  text-align:center;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 25px;
+  background:#40916C;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+/* SECTIONS */
+
+.content-section{
+  padding:80px 10%;
+}
+
+.light-bg{
+  background:white;
+}
+
+h2{
+  color:#03bd6f;
+  margin-bottom:30px;
+}
+
+/* SPLIT LAYOUT */
+
+.split-layout{
+  display:flex;
+  gap:40px;
+  align-items:center;
+}
+
+.split-layout img{
+  width:40%;
+  border-radius:10px;
+}
+
+/* CARDS */
+
+.card-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+.card h4{
+  margin-top:15px;
+  color:#40916C;
+}
+
+.card{
+  opacity:0;
+  transform:translateY(40px);
+  transition:all 0.8s ease;
+}
+
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+/* PLACEHOLDER */
+
+.placeholder{
+  padding:80px 10%;
+  background:#e9ecef;
+  text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+  background:#1B4332;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+  .split-layout{
+    flex-direction:column;
+  }
+
+  .split-layout img{
+    width:100%;
+  }
+}
+
+.map-container{
+  position:relative;
+  max-width:900px;
+  margin:auto;
+}
+
+.biome-map{
+  width:100%;
+  border-radius:10px;
+}
+
+.hotspot{
+  position:absolute;
+  background:#1B4332;
+  color:white;
+  padding:6px 10px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+/* Hotspot Positions (Adjust Later) */
+.hotspot.tundra{
+  top:10%;
+  left:40%;
+}
+
+.hotspot.tropical{
+  top:50%;
+  left:45%;
+}
+
+.hotspot.desert{
+  top:35%;
+  left:30%;
+}
+
+
+/* Vr SECTION  */
+/* ===================== */
+/* VR VIEWER & WRAPPER */
+/* ===================== */
+
+.vr-wrapper{
+  max-width:1100px;
+  margin:40px auto;
+  background:#000;
+  border-radius:14px;
+  overflow:hidden;
+  position:relative;
+}
+
+#vrViewer{
+  height:480px;          /* smaller, embedded view */
+  width:100%;
+  border-radius:0;       /* wrapper handles rounding */
+}
+
+/* ===================== */
+/* SCENE CONTROLS */
+/* ===================== */
+
+.scene-controls{
+  margin-bottom:20px;
+}
+
+.scene-controls button{
+  background:#1B4332;
+  color:white;
+  padding:10px 20px;
+  margin-right:10px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* ===================== */
+/* VR TOOLBAR (AUDIO) */
+/* ===================== */
+
+.vr-toolbar{
+  position:absolute;
+  top:12px;
+  right:12px;
+  z-index:30;
+}
+
+.vr-toolbar button{
+  background:#1B4332;
+  color:white;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+/* ===================== */
+/* HOTSPOT PREVIEW CARDS */
+/* ===================== */
+
+.hotspot-preview{
+  background:#fff;
+  border-radius:8px;
+  padding:6px;
+  width:120px;                 /* FIXED SIZE */
+  box-shadow:0 4px 12px rgba(0,0,0,.3);
+  cursor:pointer;
+  text-align:center;
+}
+
+.hotspot-preview img{
+  width:100%;
+  height:70px;                 /* PREVENT HUGE IMAGES */
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.hotspot-preview span{
+  font-size:12px;
+  display:block;
+  margin-top:4px;
+  color:#333;
+}
+
+/* ===================== */
+/* MODAL (FIXED VISIBILITY) */
+/* ===================== */
+
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  z-index:1000;               /* ABOVE VR */
+}
+
+.modal-content{
+  background:white;
+  padding:30px;
+  max-width:520px;
+  margin:8% auto;
+  border-radius:12px;
+  position:relative;
+}
+
+.modal-content img{
+  width:100%;
+  max-height:260px;           /* PREVENT OVERSIZED IMAGE */
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.close-btn{
+  position:absolute;
+  top:12px;
+  right:14px;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.modal-links{
+  margin-top:20px;
+}
+
+.modal-links a{
+  display:inline-block;
+  margin-right:10px;
+  background:#1B4332;
+  color:white;
+  padding:8px 16px;
+  border-radius:6px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+/* ===================== */
+/* EXISTING SECTION STYLE */
+/* ===================== */
+
+.abiotic-intro{
+  max-width:700px;
+  margin-bottom:40px;
+}
+
+
+.abiotic-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.abiotic-card{
+  background:white;
+  padding:25px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.abiotic-card:hover{
+  transform:translateY(-6px);
+}
+
+.soil-comparison{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  margin-top:40px;
+}
+
+.soil-card{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.soil-card h3{
+  color:#1B4332;
+  margin-bottom:15px;
+}
+
+@media(max-width:768px){
+  .soil-comparison{
+    grid-template-columns:1fr;
+  }
+}
+
+.climate-block{
+  padding:60px 0;
+}
+
+.climate-block h3{
+  color:#1B4332;
+  margin-bottom:20px;
+}
+
+.adaptation-card{
+  background:white;
+  padding:30px;
+  margin-top:40px;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+.climate-adaptation-section .section-intro{
+  max-width:750px;
+  margin-bottom:50px;
+}
+
+.biotic-section .section-intro{
+  max-width:750px;
+  margin-bottom:40px;
+}
+
+.styled-list{
+  margin-top:20px;
+  line-height:1.8;
+}
+
+.styled-list li{
+  margin-bottom:8px;
+}
+.split-layout img{
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+}
+
+.threats-section .section-intro{
+  max-width:750px;
+  margin-bottom:30px;
+}
+
+.threats-highlight{
+  background:#eef6f1;
+  padding:25px;
+  border-left:6px solid #1B4332;
+  border-radius:8px;
+  margin-bottom:50px;
+}
+
+.table-heading{
+  margin-top:40px;
+}
+
+.table-container{
+  overflow-x:auto;
+}
+
+.biome-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+.biome-table th{
+  background:#1B4332;
+  color:white;
+  padding:15px;
+  text-align:left;
+}
+
+.biome-table td{
+  padding:15px;
+  border-bottom:1px solid #ddd;
+  vertical-align:top;
+}
+
+.biome-table tr:nth-child(even){
+  background:#f8f9fa;
+}
+
+.biome-table tr:hover{
+  background:#eef6f1;
+}

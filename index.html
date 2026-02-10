@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Virtual Biome: Tundra</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css"/>
+<script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+  <h1>Biome Explorer</h1>
+
+  <nav>
+    <a href="#section1">Introduction</a>
+     <a href="#section2">Climate & Adaptation</a>
+    <a href="#section3">Flora & Fauna</a>
+    <a href="#vr">VR Tour</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+  <div class="hero-content">
+    <h2>Understanding Global Biomes</h2>
+    <p>
+      Explore the structure, importance, and characteristics of Earth's major ecological regions through academic insights and immersive experiences.
+    </p>
+
+    <a href="#section1" class="btn">Start Learning</a>
+  </div>
+
+</section>
+
+<!-- ================= SECTION 1 ================= -->
+
+<section id="section1" class="content-section">
+
+<h2>What is a Biome?</h2>
+
+<div class="split-layout">
+
+  <div class="text">
+    <p>
+      Biomes are important because they all contribute to a healthy and full-of-life planet. Each biome has a special role in nature.
+For example, forests, with their vast canopies, purify the air by taking in carbon dioxide and releasing oxygen. Oceans and rivers provide water and food for people and animals. Deserts and grasslands support unique plants and animals that live nowhere else.
+    </p>
+
+    <p>
+      Examples include deserts, forests, grasslands, tundra, and aquatic environments. Each biome supports unique biodiversity and ecological relationships.
+    </p>
+  </div>
+
+  <img src="images/biome-example.jpg" alt="Biome Example">
+
+</div>
+
+</section>
+
+<!-- IMPORTANCE -->
+
+<section class="content-section light-bg">
+
+<h2>Why Are Biomes Important?</h2>
+
+<p>
+Biomes play a crucial role in maintaining environmental stability. Forests produce oxygen and regulate carbon dioxide, oceans control global water cycles, and tundra ecosystems influence climate regulation. Human survival depends on biome resources including food, clean water, and raw materials.
+</p>
+
+</section>
+
+<!-- BIOME TYPES -->
+ <section class="content-section globe-section">
+
+  <h2>Global Distribution of Biomes</h2>
+
+  <div class="split-layout">
+
+    <div class="text">
+      <p>
+        Biomes are distributed across the Earth based on climate, altitude, and geographic conditions. 
+        Cold biomes such as tundra exist near the poles and high mountains, while tropical forests are found near the equator.
+      </p>
+
+      <p>
+        Understanding global biome distribution helps scientists study climate patterns, biodiversity, and environmental changes.
+      </p>
+    </div>
+
+    <img src="images/globe.jpeg" alt="Global Biome Distribution">
+
+  </div>
+
+</section>
+<!-- Map section -->
+ <section class="content-section biome-map-section">
+
+<h2>Interactive World Biome Map</h2>
+
+<p class="section-intro">
+Click highlighted regions to learn about major global biomes.
+</p>
+
+<div class="map-container">
+
+  <img src="images/tundra-map.jpg" class="biome-map">
+
+  <!-- Tundra Hotspot -->
+  <div class="hotspot tundra" onclick="scrollToTundra()">
+    <span>Tundra</span>
+  </div>
+
+  <!-- Tropical Hotspot -->
+  <!-- <div class="hotspot tropical">
+    <span>Tropical</span>
+  </div> -->
+
+  <!-- Desert Hotspot -->
+  <!-- <div class="hotspot desert">
+    <span>Desert</span>
+  </div> -->
+
+</div>
+
+</section>
+
+
+
+<section class="content-section">
+
+<h2>Major Types of Biomes</h2>
+
+<div class="card-container">
+
+  <div class="card">
+    <h3>Tundra</h3>
+    <p>Cold environment with permafrost and limited vegetation.</p>
+  </div>
+
+  <div class="card">
+    <h3>Taiga</h3>
+    <p>Dense evergreen forests found in cold regions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Temperate Forest</h3>
+    <p>Moderate climate with diverse plant and animal life.</p>
+  </div>
+
+  <div class="card">
+    <h3>Tropical Forest</h3>
+    <p>Warm and humid environment with high biodiversity.</p>
+  </div>
+
+  <div class="card">
+    <h3>Shrubland</h3>
+    <p>Dry environment dominated by shrubs and grasses.</p>
+  </div>
+
+</div>
+
+</section>
+
+<!-- TUNDRA SECTION -->
+
+<section id="tundra">
+
+<h2>Tundra Biome Overview</h2>
+
+<div class="card-container">
+
+  <!-- Arctic Tundra -->
+  <div class="card">
+    <h3>Arctic Tundra</h3>
+
+    <p>
+      Arctic tundra is found in the high latitudes near the North Pole. It spans across regions such as Alaska, Canada, Russia, and Greenland.
+    </p>
+
+    <p>
+      This biome is characterized by extremely cold temperatures, limited vegetation, and permanently frozen soil known as permafrost.
+    </p>
+  </div>
+
+
+  <!-- Alpine Tundra -->
+  <div class="card">
+    <h3>Alpine Tundra</h3>
+
+    <p>
+      Alpine tundra accounts for about 3% of Earth's land surface. It occurs in mountainous regions around the world at high elevations above the tree line.
+    </p>
+
+    <p>
+      Unlike Arctic tundra, Alpine tundra can exist closer to the Equator because its climate depends on altitude rather than latitude.
+    </p>
+
+    <h4>Examples:</h4>
+
+    <ul>
+      <li><strong>North America:</strong> Rocky Mountains, Sierra Nevada</li>
+      <li><strong>South America:</strong> Andes Mountains</li>
+      <li><strong>Europe:</strong> Alps, Carpathian Mountains</li>
+      <li><strong>Africa:</strong> Mount Kilimanjaro, Ethiopian Highlands</li>
+      <li><strong>Asia:</strong> Himalayas, Tibetan Plateau</li>
+    </ul>
+
+  </div>
+
+</div>
+
+</section>
+ <!-- <section class="content-section tundra-map">
+
+<h2>Tundra Global Location</h2>
+
+<div class="split-layout">
+
+  <div class="text">
+    <p>
+      Tundra ecosystems are located in polar regions and high mountain elevations. 
+      Arctic tundra appears in northern continents, while alpine tundra occurs in mountainous regions worldwide.
+    </p>
+
+    <ul>
+      <li>Arctic Regions: Alaska, Canada, Russia, Greenland</li>
+      <li>Mountain Regions: Himalayas, Andes, Alps, Rockies</li>
+    </ul>
+  </div>
+
+  <img src="images/tundra-map.jpg" alt="Tundra Location Map">
+
+</div>
+
+</section> -->
+<!-- <section class="content-section climate-section light-bg">
+
+<h2>Tundra Climate Characteristics</h2>
+
+<div class="card-container">
+
+  <div class="card">
+    <h3>Temperature</h3>
+    <p>Winters are extremely cold with temperatures dropping below -30°C. Summers remain short and cool.</p>
+  </div>
+
+  <div class="card">
+    <h3>Precipitation</h3>
+    <p>Tundra receives low rainfall, usually less than 250 mm annually, mostly in the form of snow.</p>
+  </div>
+
+  <div class="card">
+    <h3>Growing Season</h3>
+    <p>The growing season lasts only 50 to 60 days due to extreme climate conditions.</p>
+  </div>
+
+  <div class="card">
+    <h3>Permafrost</h3>
+    <p>Frozen soil layer prevents deep root growth and influences vegetation patterns.</p>
+  </div>
+
+</div>
+</section> -->
+
+<section class="content-section abiotic-section">
+
+<h2>Abiotic Factors in the Tundra</h2>
+
+<div class="abiotic-intro">
+  <p>
+    Abiotic factors are the non-living components of an ecosystem that influence living organisms. 
+    In tundra environments, these include environmental conditions such as temperature, moisture levels, 
+    sunlight exposure, and physical elements like soil and snow.
+  </p>
+</div>
+
+<div class="abiotic-grid">
+
+  <div class="abiotic-card">
+    <h3>Physical Elements</h3>
+    <ul>
+      <li>Soil</li>
+      <li>Rocks</li>
+      <li>Snow</li>
+      <li>Ice</li>
+    </ul>
+  </div>
+
+  <div class="abiotic-card">
+    <h3>Climate Conditions</h3>
+    <ul>
+      <li>Sunlight</li>
+      <li>Water Availability</li>
+      <li>Temperature</li>
+      <li>Precipitation</li>
+      <li>Wind</li>
+    </ul>
+  </div>
+
+</div>
+
+</section>
+
+<section class="content-section soil-section light-bg">
+
+<h2>Tundra Biome Soil</h2>
+
+<p class="section-intro">
+Tundra soils are shaped by extreme climate conditions, freeze-thaw cycles, and the presence or absence of permafrost. 
+These soils are typically thin, nutrient-poor, and prone to erosion, limiting plant growth and biological activity.
+</p>
+
+<div class="soil-comparison">
+
+  <!-- Arctic Soil -->
+  <div class="soil-card">
+
+    <h3>Arctic Tundra Soil</h3>
+
+    <p>
+      Arctic tundra contains permafrost, a permanently frozen ground layer that may extend hundreds of meters deep. 
+      Only a thin active surface layer thaws during summer, supporting limited plant life.
+    </p>
+
+    <p>
+      Water often becomes trapped above the frozen layer, creating wetlands and influencing vegetation patterns.
+    </p>
+
+  </div>
+
+  <!-- Alpine Soil -->
+  <div class="soil-card">
+
+    <h3>Alpine Tundra Soil</h3>
+
+    <p>
+      Alpine tundra soils usually lack continuous permafrost due to steep slopes and improved drainage. 
+      Seasonal freeze-thaw cycles create shallow soil layers and surface formations such as rock rings and patterned ground.
+    </p>
+
+    <p>
+      Although better aerated than Arctic soils, alpine soils remain low in organic matter and are vulnerable to erosion.
+    </p>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- VR section -->
+<section class="vr-section">
+
+<h2>Virtual Tundra Exploration</h2>
+
+<div class="scene-controls">
+  <button onclick="loadScene('arctic')">Arctic Tundra</button>
+  <button onclick="loadScene('alpine')">Alpine Tundra</button>
+</div>
+
+<!-- VR Wrapper START -->
+<div class="vr-wrapper">
+
+  <div class="vr-toolbar">
+    <button onclick="toggleAudio()" id="audioBtn">🔊 Audio On</button>
+  </div>
+
+  <div id="vrViewer"></div>
+
+</div>
+<!-- VR Wrapper END -->
+
+</section>
+
+<!-- Modal -->
+<div id="infoModal" class="modal">
+
+  <div class="modal-content">
+
+    <span onclick="closeModal()" class="close-btn">×</span>
+
+    <img id="modalImage">
+
+    <h3 id="modalTitle"></h3>
+
+    <p id="modalText"></p>
+
+    <!-- IMPORTANT: links must stay inside modal-content -->
+    <div class="modal-links">
+      <a href="articles/arctic-fox.html">Read More</a>
+      <a href="articles/arctic-plants.html">Read More</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ================= PLACEHOLDER SECTIONS ================= -->
+
+<section id="section2" class="content-section climate-adaptation-section">
+
+<h2>Climate and Adaptation in the Tundra</h2>
+
+<p class="section-intro">
+Tundra ecosystems are shaped by extreme environmental conditions. Temperature variations, low precipitation levels, 
+strong winds, and frozen ground influence how plants, animals, and landscapes adapt to survive in this biome.
+</p>
+
+<!-- Temperature -->
+
+<div class="climate-block">
+
+  <h3>Temperature</h3>
+
+  <div class="split-layout">
+
+    <div class="text">
+      <p>
+        Temperatures in tundra environments typically range between -40°C (-40°F) during winter and approximately 18°C (64°F) during summer.
+      </p>
+
+      <p>
+        Winters are long and extremely cold, while summers are short and cool. These limited warm periods restrict plant growth and reduce biodiversity compared to other ecosystems.
+      </p>
+    </div>
+
+    <img src="images/tundra-temperature.jpg" alt="Tundra Landscape">
+  </div>
+
+</div>
+
+
+<!-- Precipitation -->
+
+<div class="climate-block light-bg">
+
+  <h3>Rainfall and Precipitation</h3>
+
+  <p>
+    The tundra biome receives very little precipitation, often only 6 to 10 inches annually, most of which falls as snow.
+  </p>
+
+  <p>
+    Despite the low rainfall, tundra landscapes can remain wet and soggy. Moisture evaporates slowly due to cold temperatures, 
+    and permafrost prevents proper drainage, allowing water to accumulate on the surface.
+  </p>
+
+</div>
+
+
+<!-- Wind and Moisture -->
+
+<div class="climate-block">
+
+  <h3>Wind and Moisture Patterns</h3>
+
+  <p>
+    Strong winds frequently sweep across tundra regions. These winds contribute to soil erosion, distribute snow cover unevenly, 
+    and transport dust and microorganisms across frozen surfaces.
+  </p>
+
+  <p>
+    Limited evaporation and frozen ground conditions influence water distribution and create wetland-like areas during warmer months.
+  </p>
+
+</div>
+
+
+<!-- Dirty Ice Example -->
+
+<div class="adaptation-card">
+
+  <h3>Dirty Ice Phenomenon</h3>
+
+  <p>
+    Dust containing dirt, soot, and microscopic organisms can accumulate on snow and ice surfaces. 
+    This dust, known as cryoconite, forms small pockets on ice and influences melting patterns.
+  </p>
+
+  <p>
+    These deposits affect surface temperature and contribute to environmental changes within frozen tundra landscapes.
+  </p>
+
+</div>
+
+
+<!-- Environmental Adaptation -->
+
+<div class="adaptation-card light-bg">
+
+  <h3>Environmental Adaptations</h3>
+
+  <p>
+    Organisms living in tundra regions develop specialized survival mechanisms. Plants grow close to the ground to avoid wind damage, 
+    while animals develop thick fur or fat layers to retain heat.
+  </p>
+
+  <p>
+    Seasonal migration, hibernation, and short growth cycles help species survive the harsh tundra climate.
+  </p>
+
+</div>
+
+</section>
+
+
+<section id="section3" class="content-section biotic-section">
+
+<h2>Vegetation</h2>
+
+<p class="section-intro">
+Biotic factors in the tundra ecosystem include specialized flora and fauna adapted to extreme cold, low nutrient, and short growing seasons.
+</p>
+
+<!-- Vegetation Overview -->
+
+<div class="split-layout">
+
+  <div class="text">
+    <p>
+      Tundra landscapes contain almost no large trees due to permafrost and extremely short growing seasons.
+      Instead, vegetation mainly consists of lichens, mosses, grasses, sedges, and small shrubs that can survive
+      in nutrient-poor soil and freezing temperatures.
+    </p>
+  </div>
+
+  <img src="images/tundra-vegetation.jpg" alt="Tundra Vegetation">
+
+</div>
+
+
+
+<h3>Plants in Tundra Biomes</h3>
+
+<p>
+Tundra plants have developed remarkable survival adaptations. The growing season lasts only 6 to 10 weeks,
+meaning plants must complete their life cycles quickly and maximize photosynthesis during extended daylight periods.
+</p>
+
+
+
+<div class="card-container">
+
+<div class="card">
+<h4>Mosses and Liverworts</h4>
+<ul>
+<li>Sphagnum moss</li>
+<li>Marchantia (liverwort)</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Lichens</h4>
+<ul>
+<li>Reindeer moss</li>
+<li>Usnea (beard lichen)</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Grasses and Sedges</h4>
+<ul>
+<li>Cotton grass (Eriophorum)</li>
+<li>Carex species</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Low Shrubs and Dwarf Trees</h4>
+<ul>
+<li>Arctic willow</li>
+<li>Dwarf birch</li>
+<li>Bog rosemary</li>
+</ul>
+</div>
+
+</div>
+
+
+
+<h3>Wildflowers</h3>
+
+<p>
+Wildflowers produce brief but vibrant blooms during summer when sunlight is abundant.
+</p>
+
+<ul class="styled-list">
+<li>Arctic poppy (Papaver radicatum)</li>
+<li>Lousewort (Pedicularis)</li>
+<li>Dryas species</li>
+</ul>
+
+
+
+<h3>Tundra Animals</h3>
+
+<div class="split-layout">
+
+  <div class="text">
+    <p>
+      Tundra animals are specially adapted to survive freezing temperatures, limited food supply, and strong winds.
+      Most species have compact bodies, thick fur or feathers, and fat layers to retain heat.
+    </p>
+  </div>
+
+  <img src="images/tundra-animals.jpg" alt="Tundra Animals">
+
+</div>
+
+
+
+
+<div class="card-container">
+
+<div class="card">
+<h4>Aquatic Mammals</h4>
+<ul>
+<li>Seals</li>
+<li>Walrus</li>
+<li>Beluga whales</li>
+<li>Bowhead whales</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Tundra Fish</h4>
+<ul>
+<li>Salmon</li>
+<li>Cod</li>
+<li>Trout</li>
+<li>Flatfish</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Bird Species</h4>
+<ul>
+<li>Snowy owl</li>
+<li>Ptarmigan</li>
+<li>Snow geese</li>
+<li>Harlequin duck</li>
+<li>Sandpipers and falcons</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Insects</h4>
+<ul>
+<li>Mosquitoes</li>
+<li>Black flies</li>
+<li>Grasshoppers</li>
+<li>Arctic bumble bees</li>
+<li>Biting midges</li>
+</ul>
+</div>
+
+</div>
+
+
+
+<h3>People in Tundra Biomes</h3>
+
+<div class="split-layout">
+
+<div class="text">
+<p>
+Indigenous communities such as the Inuit, Sámi, and Nenets have lived in tundra regions for centuries.
+They developed sustainable lifestyles using fishing, hunting, and reindeer herding.
+</p>
+
+<p>
+Traditional adaptations include insulated shelters, fur clothing, and migratory travel patterns following food sources.
+Modern communities continue to preserve strong cultural connections with tundra ecosystems.
+</p>
+</div>
+
+<img src="images/tundra-people.jpg" alt="Indigenous People in Tundra">
+
+</div>
+
+
+
+<h3>Flora Adaptations</h3>
+
+<ul class="styled-list">
+<li>Plants complete life cycles within a single summer season.</li>
+<li>Low ground growth protects against frost.</li>
+<li>Horizontal branching reduces wind damage.</li>
+<li>Cluster growth protects from cold.</li>
+<li>Waxy leaves reduce moisture loss.</li>
+<li>Hair-covered stems trap heat.</li>
+</ul>
+
+
+
+<h3>Fauna Adaptations</h3>
+
+<ul class="styled-list">
+<li>Thick fur or feathers retain body heat.</li>
+<li>Seasonal white fur provides camouflage.</li>
+<li>Compact body shapes conserve heat.</li>
+<li>Migration avoids extreme winter cold.</li>
+<li>Fat storage provides insulation and energy.</li>
+<li>Burrowing protects against wind.</li>
+</ul>
+
+
+
+<h3>Tundra Adaptations</h3>
+
+<ul class="styled-list">
+<li>Small plants grow close to ground for warmth.</li>
+<li>Dark flowers absorb solar heat.</li>
+<li>Fuzzy plant surfaces reduce wind damage.</li>
+</ul>
+
+</section>
+
+
+<section id="section4" class="content-section threats-section">
+
+<h2>Threats in Tundra Biomes</h2>
+
+<p class="section-intro">
+The tundra biome is facing increasing environmental pressures that threaten its delicate ecological balance.
+The most significant and far-reaching threat is climate change, which is causing rising temperatures,
+melting permafrost, and altered precipitation patterns.
+</p>
+
+<div class="threats-highlight">
+
+<p>
+Arctic regions are warming more than three times faster than the global average. This rapid warming is
+causing earlier spring thaws, longer growing seasons, and the expansion of shrubs and trees into tundra
+regions. These changes disrupt traditional tundra ecosystems and threaten native plant and animal species.
+</p>
+
+</div>
+
+<!-- BIOME COMPARISON TABLE -->
+
+<h2 class="table-heading">Biome Comparison Chart</h2>
+
+<div class="table-container">
+
+<table class="biome-table">
+
+<thead>
+<tr>
+<th>Biome</th>
+<th>Geographic Location</th>
+<th>Climate</th>
+<th>Major Flora</th>
+<th>Major Fauna</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td><strong>Tundra</strong></td>
+<td>Arctic tundras occur near polar regions. Alpine tundras exist in mountain ranges worldwide.</td>
+<td>Cold and dry climate</td>
+<td>Mosses, grasses, lichens, very few trees</td>
+<td>Insects, birds, arctic fox, hares, polar bears, mountain goats</td>
+</tr>
+
+<tr>
+<td><strong>Taiga</strong></td>
+<td>Located beneath tundra regions in subarctic zones</td>
+<td>Very cold, subarctic, semi-arid</td>
+<td>Conifers, spruce, pine, cedar, mosses, lichens</td>
+<td>Birds, raccoons, bears, moose, minks, insects</td>
+</tr>
+
+<tr>
+<td><strong>Temperate Forest</strong></td>
+<td>Eastern US, Northern Europe, East Asia</td>
+<td>Moderate temperature, semi-humid</td>
+<td>Beech, maple, oak, shrubs, mosses, ferns</td>
+<td>Birds, amphibians, reptiles, wolves, deer, foxes</td>
+</tr>
+
+<tr>
+<td><strong>Tropical Forest</strong></td>
+<td>Near equator regions such as Brazil, Africa, and Oceania</td>
+<td>Warm, humid, heavy rainfall</td>
+<td>Evergreen trees, vines, epiphytes</td>
+<td>Monkeys, sloths, tigers, leopards, reptiles, birds</td>
+</tr>
+
+<tr>
+<td><strong>Shrubland</strong></td>
+<td>Southern Europe and temperate dry regions</td>
+<td>Temperate and semi-arid</td>
+<td>Shrubs, scrub oak, scrub pine</td>
+<td>Birds, reptiles, rodents, deer</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+<p>© VIRTUAL TUNDRA BIOME</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
