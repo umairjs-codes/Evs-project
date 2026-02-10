@@ -166,3 +166,25 @@ function toggleAudio(){
     btn.textContent = "🔇 Audio Off";
   }
 }
+
+// Carousel Logic
+const slides = document.querySelector(".abiotic-slides");
+const slideItems = document.querySelectorAll(".abiotic-slide");
+const prevBtn = document.querySelector(".abiotic-prev");
+const nextBtn = document.querySelector(".abiotic-next");
+
+let currentIndex = 0;
+
+function updateCarousel(){
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+nextBtn.addEventListener("click", ()=>{
+  currentIndex = (currentIndex + 1) % slideItems.length;
+  updateCarousel();
+});
+
+prevBtn.addEventListener("click", ()=>{
+  currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
+  updateCarousel();
+});

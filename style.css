@@ -454,3 +454,64 @@ footer{
 .biome-table tr:hover{
   background:#eef6f1;
 }
+
+/* ================= */
+/* ABIOTIC CAROUSEL */
+/* ================= */
+
+.abiotic-carousel-card{
+  position:relative;
+}
+
+.abiotic-carousel{
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  margin-top:15px;
+}
+
+.abiotic-slides{
+  display:flex;
+  transition:transform 0.5s ease;
+}
+
+.abiotic-slide{
+  min-width:100%;
+  text-align:center;
+}
+
+.abiotic-slide img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.abiotic-slide p{
+  margin-top:8px;
+  font-weight:600;
+  color:#40916C;
+}
+
+/* Navigation Buttons */
+
+.abiotic-prev,
+.abiotic-next{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  background:rgba(0,0,0,0.6);
+  color:white;
+  border:none;
+  padding:8px 12px;
+  cursor:pointer;
+  border-radius:6px;
+}
+
+.abiotic-prev{ left:10px; }
+.abiotic-next{ right:10px; }
+
+.abiotic-prev:hover,
+.abiotic-next:hover{
+  background:#1B4332;
+}

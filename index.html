@@ -81,7 +81,7 @@ Biomes play a crucial role in maintaining environmental stability. Forests produ
 </section>
 
 <!-- BIOME TYPES -->
- <section class="content-section globe-section">
+ <!-- <section class="content-section globe-section">
 
   <h2>Global Distribution of Biomes</h2>
 
@@ -102,14 +102,14 @@ Biomes play a crucial role in maintaining environmental stability. Forests produ
 
   </div>
 
-</section>
+</section> -->
 <!-- Map section -->
  <section class="content-section biome-map-section">
 
 <h2>Interactive World Biome Map</h2>
 
 <p class="section-intro">
-Click highlighted regions to learn about major global biomes.
+Click highlighted region to learn about major global biomes.
 </p>
 
 <div class="map-container">
@@ -137,7 +137,7 @@ Click highlighted regions to learn about major global biomes.
 
 
 
-<section class="content-section">
+<!-- <section class="content-section">
 
 <h2>Major Types of Biomes</h2>
 
@@ -170,7 +170,7 @@ Click highlighted regions to learn about major global biomes.
 
 </div>
 
-</section>
+</section> -->
 
 <!-- TUNDRA SECTION -->
 
@@ -221,6 +221,56 @@ Click highlighted regions to learn about major global biomes.
 </div>
 
 </section>
+
+<!-- VR section -->
+<section class="vr-section">
+
+<h2>Virtual Tundra Exploration</h2>
+
+<div class="scene-controls">
+  <button onclick="loadScene('arctic')">Arctic Tundra</button>
+  <button onclick="loadScene('alpine')">Alpine Tundra</button>
+</div>
+
+<!-- VR Wrapper START -->
+<div class="vr-wrapper">
+
+  <div class="vr-toolbar">
+    <button onclick="toggleAudio()" id="audioBtn">🔊 Audio On</button>
+  </div>
+
+  <div id="vrViewer"></div>
+
+</div>
+<!-- VR Wrapper END -->
+
+</section>
+
+<!-- Modal -->
+<div id="infoModal" class="modal">
+
+  <div class="modal-content">
+
+    <span onclick="closeModal()" class="close-btn">×</span>
+
+    <img id="modalImage">
+
+    <h3 id="modalTitle"></h3>
+
+    <p id="modalText"></p>
+
+    <!-- IMPORTANT: links must stay inside modal-content -->
+    <div class="modal-links">
+      <a href="articles/arctic-fox.html">Read More</a>
+      <a href="articles/arctic-plants.html">Read More</a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
  <!-- <section class="content-section tundra-map">
 
 <h2>Tundra Global Location</h2>
@@ -287,15 +337,43 @@ Click highlighted regions to learn about major global biomes.
 
 <div class="abiotic-grid">
 
-  <div class="abiotic-card">
-    <h3>Physical Elements</h3>
-    <ul>
-      <li>Soil</li>
-      <li>Rocks</li>
-      <li>Snow</li>
-      <li>Ice</li>
-    </ul>
+  <div class="abiotic-card abiotic-carousel-card">
+
+  <h3>Physical Elements</h3>
+
+  <div class="abiotic-carousel">
+
+    <div class="abiotic-slides">
+
+      <div class="abiotic-slide active">
+        <img src="images/abiotic-soil.jpeg" alt="Tundra Soil">
+        <p>Soil</p>
+      </div>
+
+      <div class="abiotic-slide">
+        <img src="images/abiotic-rock.jpeg" alt="Tundra Rocks">
+        <p>Rocks</p>
+      </div>
+
+      <div class="abiotic-slide">
+        <img src="images/abiotic-snow.jpeg" alt="Tundra Snow">
+        <p>Snow</p>
+      </div>
+
+      <div class="abiotic-slide">
+        <img src="images/abiotic-ice.jpeg" alt="Tundra Ice">
+        <p>Ice</p>
+      </div>
+
+    </div>
+
+    <button class="abiotic-prev">❮</button>
+    <button class="abiotic-next">❯</button>
+
   </div>
+
+</div>
+
 
   <div class="abiotic-card">
     <h3>Climate Conditions</h3>
@@ -358,54 +436,6 @@ These soils are typically thin, nutrient-poor, and prone to erosion, limiting pl
 </div>
 
 </section>
-
-
-<!-- VR section -->
-<section class="vr-section">
-
-<h2>Virtual Tundra Exploration</h2>
-
-<div class="scene-controls">
-  <button onclick="loadScene('arctic')">Arctic Tundra</button>
-  <button onclick="loadScene('alpine')">Alpine Tundra</button>
-</div>
-
-<!-- VR Wrapper START -->
-<div class="vr-wrapper">
-
-  <div class="vr-toolbar">
-    <button onclick="toggleAudio()" id="audioBtn">🔊 Audio On</button>
-  </div>
-
-  <div id="vrViewer"></div>
-
-</div>
-<!-- VR Wrapper END -->
-
-</section>
-
-<!-- Modal -->
-<div id="infoModal" class="modal">
-
-  <div class="modal-content">
-
-    <span onclick="closeModal()" class="close-btn">×</span>
-
-    <img id="modalImage">
-
-    <h3 id="modalTitle"></h3>
-
-    <p id="modalText"></p>
-
-    <!-- IMPORTANT: links must stay inside modal-content -->
-    <div class="modal-links">
-      <a href="articles/arctic-fox.html">Read More</a>
-      <a href="articles/arctic-plants.html">Read More</a>
-    </div>
-
-  </div>
-
-</div>
 
 
 
@@ -525,7 +555,7 @@ strong winds, and frozen ground influence how plants, animals, and landscapes ad
 
 <section id="section3" class="content-section biotic-section">
 
-<h2>Vegetation</h2>
+<h2>Biotic Factors in Tundra</h2>
 
 <p class="section-intro">
 Biotic factors in the tundra ecosystem include specialized flora and fauna adapted to extreme cold, low nutrient, and short growing seasons.
