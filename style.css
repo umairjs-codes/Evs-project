@@ -587,3 +587,41 @@ footer{
 .animals-carousel{
   width:40%;
 }
+/* ADD PREMIUM CLIMATE IMAGE STYLE */
+
+.climate-block,
+.adaptation-card{
+  margin-top:50px;
+  padding:30px;
+  border-radius:14px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.07);
+}
+
+.climate-block img,
+.adaptation-card img{
+  width:40%;
+  height:260px;
+  object-fit:cover;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.15);
+  transition:transform 0.4s ease;
+}
+
+.climate-block img:hover,
+.adaptation-card img:hover{
+  transform:scale(1.03);
+}
+@media(max-width:768px){
+
+  .split-layout{
+    flex-direction:column;
+  }
+
+  .climate-block img,
+  .adaptation-card img{
+    width:100%;
+    height:220px;
+  }
+
+}
+/*  */
