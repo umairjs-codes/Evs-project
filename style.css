@@ -493,6 +493,51 @@ footer{
   color:#40916C;
 }
 
+.abiotic-list{
+  margin-top:20px;
+  padding-left:20px;
+}
+
+.abiotic-list li{
+  margin-bottom:6px;
+  font-weight:500;
+  color:#2d6a4f;
+}
+
+/* Add this below your soil styles or global section CSS. */
+.soil-split{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.soil-text{
+  flex:1;
+}
+
+.soil-image{
+  flex:1;
+}
+
+.soil-image img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  transition:transform 0.4s ease;
+}
+
+.soil-image img:hover{
+  transform:scale(1.03);
+}
+@media(max-width:768px){
+
+  .soil-split{
+    flex-direction:column;
+  }
+
+}
+
+
 /* Navigation Buttons */
 
 .abiotic-prev,
