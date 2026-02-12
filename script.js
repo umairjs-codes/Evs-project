@@ -214,3 +214,17 @@ document.querySelectorAll(".tundra-carousel").forEach(carousel => {
   });
 
 });
+let wildflowerIndex = 0;
+
+function moveWildflowerSlide(direction){
+
+  const track = document.getElementById("wildflowerTrack");
+  const slides = track.children.length;
+
+  wildflowerIndex += direction;
+
+  if(wildflowerIndex < 0) wildflowerIndex = slides - 1;
+  if(wildflowerIndex >= slides) wildflowerIndex = 0;
+
+  track.style.transform = `translateX(-${wildflowerIndex * 100}%)`;
+}
